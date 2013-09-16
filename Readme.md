@@ -4,6 +4,9 @@ Leanpub Sales
 This scripts uses the Leanpub API to query sales number for your book,
 and display info if a new sales has been made.
 
+Have to copy `secrets.py.example` to  `secrets.py` and update the API key
+and book slug in there.
+
 You can automate things by adding a similar line in crontab:
 
     */15 * * * * cd /leanpubsales/; ./sales.py | ifne /usr/bin/mail -s "New Book Sales" "my@email.com"
